@@ -20,6 +20,11 @@
                 animation-delay: 0.2s; */
             }
 
+            .sponsorImg :hover{
+                max-width: 180px;
+                animation-delay: 0.1s;
+            }
+
             #myVideo {
                 position: fixed;
                 right: 0;
@@ -33,7 +38,7 @@
                 margin-left: 100px;
                 margin-right: 100px;
                 margin-bottom: 0px !important;
-                
+
             }
 
             @keyframes mymove {
@@ -58,7 +63,8 @@
                 }
                 #spons{
                     margin-left: 0px;
-                     
+                    height: auto !important; 
+
                 }
                 #underline{
                     width: 60% !important;
@@ -70,6 +76,7 @@
     
     <body id="wrapper">
         <div class="wrapper">
+
             <video autoplay muted loop id="myVideo">
                 <source src="bg.mp4" type="video/mp4">
               </video>
@@ -78,27 +85,32 @@
             <!-- <div class="content" style="background-image: url('img/sponsors.jpg'); background-position: center; background-size: cover; "> -->
                 <div class="sc" >
                     <div class="container-fluid mt-4" id="title" style="color:#fff;position: absolute;">
+
                         <h1><strong>OUR SPONSORS</strong></h1>
                         <img id="underline" class="mt-0" style="width:16vw;max-height:15px;position:relative;bottom:12px;"
                             src="img/d2.svg">
                     </div>
+
                     <br><br><br><br><br><br>
                     <div id="spons" class="sponsvg container mt-3 pt-3 pb-3" style="background:rgb(255,255,255,0.1); border-radius: 10px;  width: 100%; position: absolute;">
-                        <div class="row m-4" style="position: absolute; ">
+                        <div class="row m-4" style="display:block; ">
                             <!-- {% for sponsor in sponsors %}
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="{{ sponsor.image.url }}">
                                     <center style="color:white;"><strong>{{sponsor.name}}</strong></center>
+
                                 </a>
                             </div>
                             {% endfor %} -->
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-                                    <center style="color:white; "><strong>Lorem Nemo</strong></center>
+
+                                    <center style="color:white; "><strong>Lorem Nemo</
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
+
                                     <center style="color:white;"><strong>Lorem Nemo</strong></center>
                                 </a>
                             </div><div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
@@ -108,16 +120,19 @@
                             </div><div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
                                     <center style="color:white; "><strong>Lorem Nemo</strong></center>
+
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
                                     <center style="color:white; "><strong>Lorem Nemo</strong></center>
+
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
                                     <center style="color:white; "><strong>Lorem Nemo</strong></center>
+
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
@@ -176,7 +191,7 @@
     </html>
     <style>
     #spons {
-        height: 200vh !important;
+        height: 350vh !important;
     }
     .content {
         z-index: 9999 !important;
