@@ -13,6 +13,20 @@
         <!-- CSS only -->
         
         <style>
+            .sponsorBox{
+                justify-content: center !important;
+                align-items: center !important;
+                background-size: cover!important;
+                margin-bottom: 50px !important;
+                border-radius: 25px 0px;  
+                width: 100%; 
+                background:rgb(0,0,0,0.7); 
+                border: 2px solid rgb(170, 0, 248) !important;
+                outline: none;
+    border-color: rgb(240, 0, 248);
+    box-shadow: 0 0 10px rgb(248, 0, 194);
+            }
+
             .sponsorImg {
                 max-width: 150px;
                 max-height: 150px;
@@ -34,16 +48,25 @@
             }
 
             #spons{
-
-                margin-left: 100px !important;
-                
-                /* display: flex;
+                display: flex;
                 justify-content: center !important;
-                align-items: center !important; */
+                align-items: center !important;
+                margin-left: 100px !important;
+                margin-bottom: 100px !important;
+                background:rgb(0,0,0,0); 
+                border-radius: 105px 0px;  
+                width: 100%; 
+                position: absolute;
+                /* border: 2px solid rgb(170, 0, 248) !important;
+                outline: none;
+    border-color: rgb(240, 0, 248);
+    box-shadow: 0 0 10px rgb(248, 0, 194); */
+                
                 
                 
 
             }
+            
 
             @media only screen and (max-width: 600px) {
                 .sponsorBox {
@@ -104,7 +127,7 @@
                     </div>
 
                     <br><br><br><br><br><br>
-                    <div id="spons" class="sponsvg container mt-3 pt-3 pb-3" style="background:rgb(0,0,0,0.64); border-radius: 20px;  width: 100%; position: absolute;">
+                    <div id="spons" class="sponsvg container mt-3 pt-3 pb-3" style="">
                         <div class="row m-4" style="display:block; ">
                             <!-- {% for sponsor in sponsors %}
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
@@ -117,52 +140,55 @@
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
 
-                                    <center style="color:white;"><strong>Lorem Nemo</strong></center>
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
                                 </a>
                             </div><div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-                                    <center style="color:white; "><strong>Lorem Nemo</strong></center>
-                                </a>
-                            </div><div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
-                                <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-                                    <center style="color:white; "><strong>Lorem Nemo</strong></center>
+                                    <center style="color:white; margin-bottom:15px;  "><strong>Lorem Nemo</strong></center>
 
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-                                    <center style="color:white; "><strong>Lorem Nemo</strong></center>
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
 
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-                                    <center style="color:white; "><strong>Lorem Nemo</strong></center>
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
 
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-                                    <center style="color:white; "><strong>Lorem Nemo</strong></center>
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-                                    <center style="color:white; "><strong>Lorem Nemo</strong></center>
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-                                    <center style="color:white; "><strong>Lorem Nemo</strong></center> 
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center> 
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-                                    <center style="color:white; "><strong>Lorem Nemo</strong></center>
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
                                 </a>
                             </div>
+                            
                         </div>
                     </div>
+                    <br><br><br><br><br><br>
                 </div>
             </div>
         </div>
