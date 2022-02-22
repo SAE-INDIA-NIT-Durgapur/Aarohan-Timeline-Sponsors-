@@ -14,8 +14,8 @@
         
         <style>
             .sponsorImg {
-                max-width: 160px;
-                max-height: 160px;
+                max-width: 150px;
+                max-height: 150px;
                 /* animation: mymove 5s ease-in;
                 animation-delay: 0.2s; */
             }
@@ -34,23 +34,35 @@
             }
 
             #spons{
-                
+
                 margin-left: 100px !important;
-                margin-right: 100px !important;
-                margin-bottom: 0px !important;
+                
+                /* display: flex;
+                justify-content: center !important;
+                align-items: center !important; */
+                
+                
 
             }
 
-            @keyframes mymove {
-                from {opacity: 0;}
-                to {opacity: 1;}
-            }
-
-            
-    
             @media only screen and (max-width: 600px) {
                 .sponsorBox {
-                    padding: 14px;
+                    margin-left: 4% !important;
+                    margin-right: 4% !important;
+                }
+                .sponsorImg {
+                    max-width: 150px;
+                    max-height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                #spons{
+                    margin-left: 0px !important;
+                    height: auto !important; 
+
+                }
+                #underline{
+                    width: 49% !important;
                 }
             }
             @media only screen and (max-width: 450px) {
@@ -62,7 +74,7 @@
                     flex-direction: column;
                 }
                 #spons{
-                    margin-left: 0px;
+                    margin-left: 0px !important;
                     height: auto !important; 
 
                 }
@@ -102,12 +114,6 @@
                                 </a>
                             </div>
                             {% endfor %} -->
-                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
-                                <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
-
-                                    <center style="color:white; "><strong>Lorem Nemo</
-                                </a>
-                            </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
                                 <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
 
@@ -190,9 +196,9 @@
     
     </html>
     <style>
-    #spons {
+    /* #spons {
         height: 350vh !important;
-    }
+    } */
     .content {
         z-index: 9999 !important;
     }
