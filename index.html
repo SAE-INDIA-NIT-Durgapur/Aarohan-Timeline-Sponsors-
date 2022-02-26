@@ -60,15 +60,21 @@
                 /* border: 2px solid rgb(170, 0, 248) !important;
                 outline: none;
     border-color: rgb(240, 0, 248);
-    box-shadow: 0 0 10px rgb(248, 0, 194); */
-                
-                
-                
+    box-shadow: 0 0 10px rgb(248, 0, 194); */   
 
+            }
+
+            .desktop-laptop{
+                display:flex;flex-direction: row;
             }
             
 
             @media only screen and (max-width: 600px) {
+                
+                .desktop-laptop{
+                    display: none;
+                }
+                
                 .sponsorBox {
                     margin-left: 4% !important;
                     margin-right: 4% !important;
@@ -90,6 +96,10 @@
             }
             @media only screen and (max-width: 450px) {
                 
+                .desktop-laptop{
+                    display: none;
+                }
+
                 .sponsorImg {
                     max-width: 160px;
                     max-height: 160px;
@@ -104,7 +114,14 @@
                 #underline{
                     width: 60% !important;
                 }
+
                 
+            }
+
+            @media only screen and (min-width: 1200px) {
+                .mobile-phone {
+                    display: none;
+                }
             }
         </style>
     </head>
@@ -139,22 +156,167 @@
                             {% endfor %} -->
                          
                           
-                          
-                        <div class="row m-4" style="display:inline; ">
+                    <div class="desktop-laptop" >     
+                        <div class="row m-4" style="display:inline; max-height: 200px;">
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
-                                <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Polygon.png" style="margin-top: 100px !important;margin-bottom: 80px !important; ">
                                     <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
 
                                 </a>
                             </div>
                             <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
-                                <a href="{{ sponsor.url }}"><img class="sponsorImg m-auto" src="img/1.png">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/devfolio.png" style="margin-top: 100px !important;margin-bottom: 80px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/LOGO-05.png" style="margin-top: 53px !important;margin-bottom: 50px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/GFG LOGO-3.png" style="margin-top: 10px !important;margin-bottom: 10px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            
+                        </div> 
+                        <div class="row m-4" style="display:inline; ">
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/tezos.png" style="margin-top: 90px !important;margin-bottom: 70px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Celo_Logo_Color.png" style="margin-top: 85px !important;margin-bottom: 50px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Full blue.png" style="margin-top: 90px !important;margin-bottom: 70px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/WhatsApp Image 2022-02-26 at 17.57.30.jpeg" style="margin-top: 10px !important;margin-bottom: 10px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                        </div> 
+                        <div class="row m-4" style="display:inline; ">
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Filecoin.png" style="margin-top: 95px !important;margin-bottom: 70px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Merchtastic.png" style="margin-top: 60px !important;margin-bottom: 50px !important; margin-left:50px !important;">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/logo1.png" style="margin-top: 90px !important;margin-bottom: 75px !important;">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Organic Tasteful.jpg" style="margin-top: 10px !important;margin-bottom: 10px !important;">
                                     <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
 
                                 </a>
                             </div>
                         </div>   
-                        
+                    </div>  
+                    
+                    <div class="mobile-phone">     
+                        <div class="row m-4" style="display:inline; ">
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Polygon.png" style="margin-top: 100px !important;margin-bottom: 80px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/devfolio.png" style="margin-top: 100px !important;margin-bottom: 80px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/LOGO-05.png" style="margin-top: 53px !important;margin-bottom: 50px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/tezos.png" style="margin-top: 90px !important;margin-bottom: 70px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Celo_Logo_Color.png" style="margin-top: 85px !important;margin-bottom: 50px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Full blue.png" style="margin-top: 90px !important;margin-bottom: 70px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Filecoin.png" style="margin-top: 95px !important;margin-bottom: 70px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Merchtastic.png" style="margin-top: 60px !important;margin-bottom: 50px !important; margin-left:17px !important;">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/logo1.png" style="margin-top: 90px !important;margin-bottom: 75px !important;">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/Organic Tasteful.jpg" style="margin-top: 10px !important;margin-bottom: 10px !important;">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/GFG LOGO-3.png" style="margin-top: 10px !important;margin-bottom: 10px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                            <div class="sponsorBox m-auto col-sm-6 col-md-4 col-lg-2">
+                                <a href="{{ sponsor.url }}" style="text-decoration: none;"><img class="sponsorImg m-auto" src="img/WhatsApp Image 2022-02-26 at 17.57.30.jpeg" style="margin-top: 10px !important;margin-bottom: 10px !important; ">
+                                    <center style="color:white; margin-bottom:15px; "><strong>Lorem Nemo</strong></center>
+
+                                </a>
+                            </div>
+                        </div> 
+                            
+                            
+                          
+                    </div> 
                     </div>
                     <br><br><br><br><br><br>
                 </div>
